@@ -3,10 +3,15 @@
   @apply px-6 md:px-12 lg:px-[90px] py-16;
 }
 @theme {
-  --color-hitam: #0c0c0c; /* biru tua */
+  --color-hitam: #0C0C0C; /* biru tua */
   --color-biru: #0090ff; /* kuning */
   --color-pudar: #999999; /* hijau */
+  --color-gelap: #0B1924;
 }
+
+/* fonts */
+
+
 
 /* Animasi hamburger jadi X */
 .open span:nth-child(1) {
