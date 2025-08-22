@@ -1,22 +1,23 @@
-const images = [
-  "./img/gdgoc.JPG",
-  "./img/triopr.png",
-  "https://placehold.co/600x400/1e293b/d1d5db?text=Extra",
-];
+const slide1Images = ["./img/gdgoc/core_team.png", "./img/gdgoc/triopr.png"];
+const slide2Images = ["./img/recursion/fullpanit.png", "./img/recursion/compe.png"];
 
-let currentIndex = 0;
-const slideImg = document.getElementById("autoSlideImg");
+function startSlideshow(imgId, images, interval = 2500) {
+  const img = document.getElementById(imgId);
+  let index = 0;
 
-setInterval(() => {
-  // Fade out dulu
-  slideImg.classList.add("opacity-0");
+  setInterval(() => {
+    img.classList.add("opacity-0");
 
-  setTimeout(() => {
-    // Ganti gambar pas udah fade out
-    currentIndex = (currentIndex + 1) % images.length;
-    slideImg.src = images[currentIndex];
+    setTimeout(() => {
+      index = (index + 1) % images.length;
+      img.src = images[index];
 
-    // Fade in
-    slideImg.classList.remove("opacity-0");
-  }, 500); // 500ms sesuai durasi fade
-}, 3000);
+      setTimeout(() => {
+        img.classList.remove("opacity-0");
+      }, 50);
+    }, 400);
+  }, interval);
+}
+
+startSlideshow("slide1Img", slide1Images);
+startSlideshow("slide2Img", slide2Images);

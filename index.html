@@ -13,69 +13,60 @@
   </head>
   <body class="bg-hitam" style="font-family: &quot;Poppins&quot;, sans-serif">
     <nav
-      class="max-w-full flex items-center justify-between md:justify-around w-full px-4 md:px-10 lg:px-[90px] py-5 shadow text-white fixed top-0 left-0 z-50 bg-black md:gap-16"
+      class="w-full fixed top-0 left-0 px-9 md:px-16 md:py-4 z-50 bg-black text-white shadow-md"
     >
-      <!-- Logo -->
-      <div class="text-lg text-biru font-semibold">AG12</div>
-      <ul class="hidden md:flex space-x-8 text-lg font-medium">
-        <li>
-          <a
-            href="#projects"
-            class="relative text-white hover:text-biru after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-biru after:transition-all after:duration-300 hover:after:w-full"
+      <div class="max-w-7xl mx-auto flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="text-xl font-bold text-biru tracking-wide">AG12</div>
+
+        <!-- Menu (Desktop) -->
+        <ul class="hidden md:flex space-x-8 text-lg font-medium">
+          <li>
+            <a
+              href="#projects"
+              class="relative text-white hover:text-biru after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-biru after:transition-all after:duration-300 hover:after:w-full"
+            >
+              Projects
+            </a>
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="relative text-white hover:text-biru after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-biru after:transition-all after:duration-300 hover:after:w-full"
+            >
+              Skills
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="relative text-white hover:text-biru after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-biru after:transition-all after:duration-300 hover:after:w-full"
+            >
+              Contact Us
+            </a>
+          </li>
+        </ul>
+
+        <!-- Hamburger (Mobile) -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-7"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            Projects
-          </a>
-        </li>
-        <li>
-          <a
-            href="#skills"
-            class="relative text-white hover:text-biru after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-biru after:transition-all after:duration-300 hover:after:w-full"
-          >
-            Skills
-          </a>
-        </li>
-        <li>
-          <a
-            href="#contact"
-            class="relative text-white hover:text-biru after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-biru after:transition-all after:duration-300 hover:after:w-full"
-          >
-            Contact Us
-          </a>
-        </li>
-      </ul>
-      <!-- Hamburger (Mobile) -->
-      <button id="menu-btn" class="md:hidden focus:outline-none">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </button>
-      <!-- Menu Mobile -->
-      <ul
-        id="menu"
-        class="absolute top-full left-0 w-full bg-hitam text-white flex-col space-y-4 p-6 text-lg font-medium hidden md:hidden"
-      >
-        <li>
-          <a href="#projects" class="hover:text-biru">Projects</a>
-        </li>
-        <li>
-          <a href="#skills" class="hover:text-biru">Skills</a>
-        </li>
-        <li>
-          <a href="#contact" class="hover:text-biru">Contact Us</a>
-        </li>
-      </ul>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
     </nav>
+
     <!-- intro -->
     <section class="section-default mt-5">
       <div
@@ -107,20 +98,32 @@
             collaborative, fast-paced environment.
           </p>
 
-          <!-- Tombol CTA -->
-          <div class="flex flex-col sm:flex-row gap-4 mt-8">
+          <!-- Social Media -->
+          <p class="text-white font-medium mb-4">Find Me On</p>
+          <div class="flex gap-4 justify-center lg:justify-start">
+            <!-- ig -->
             <a
-              href="https://google.com"
-              class="flex-1 bg-biru text-white px-6 py-3 rounded-lg text-center hover:opacity-90 hover:scale-105 shadow-md transition transform flex items-center justify-center gap-2"
+              href="https://www.instagram.com/arya_gunavaro12/"
+              target="_blank"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-biru hover:opacity-90 p-2"
             >
-              <i class="fa-solid fa-file-arrow-down"></i>
-              Download CV
+              <img src="./img/svg/instagram.svg" alt="" />
             </a>
+            <!-- gh -->
             <a
-              href="#"
-              class="flex-1 border border-white text-white px-6 py-3 rounded-lg text-center hover:bg-white hover:text-black hover:scale-105 shadow-md transition transform"
+              href="https://github.com/AryaGoberto"
+              target="_blank"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-biru hover:opacity-90 p-2"
             >
-              More
+              <img src="./img/svg/github.svg" alt="" />
+            </a>
+            <!-- linkedin -->
+            <a
+              href="https://www.linkedin.com/in/arya-gunavaro-goberto-758604252/"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-biru hover:opacity-90 p-2"
+              target="_blank"
+            >
+              <img src="./img/svg/linkedin.svg" alt="" />
             </a>
           </div>
         </div>
@@ -132,37 +135,6 @@
             alt="Hero image"
             class="w-full max-w-xs sm:max-w-sm lg:max-w-sm"
           />
-
-          <!-- Social Media -->
-          <div class="text-center lg:text-left mt-[-7px]">
-            <p class="text-white font-medium mb-4">Find Me On</p>
-            <div class="flex gap-4 justify-center lg:justify-start">
-              <!-- ig -->
-              <a
-                href="https://www.instagram.com/arya_gunavaro12/"
-                target="_blank"
-                class="w-10 h-10 flex items-center justify-center rounded-full bg-biru hover:opacity-90 p-2"
-              >
-                <img src="./img/svg/instagram.svg" alt="" />
-              </a>
-              <!-- gh -->
-              <a
-                href="https://github.com/AryaGoberto"
-                target="_blank"
-                class="w-10 h-10 flex items-center justify-center rounded-full bg-biru hover:opacity-90 p-2"
-              >
-                <img src="./img/svg/github.svg" alt="" />
-              </a>
-              <!-- linkedin -->
-              <a
-                href="https://www.linkedin.com/in/arya-gunavaro-goberto-758604252/"
-                class="w-10 h-10 flex items-center justify-center rounded-full bg-biru hover:opacity-90 p-2"
-                target="_blank"
-              >
-                <img src="./img/svg/linkedin.svg" alt="" />
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -171,7 +143,9 @@
     <section class="section-default">
       <p class="text-pudar text-center">Skills</p>
       <p class="text-white text-xl text-center">Skills I have still learned</p>
-      <div class="flex-row md:flex justify-center gap-8">
+      <div
+        class="flex flex-col md:flex-row justify-around md:justify-between items-center gap-3"
+      >
         <div
           class="w-full max-w-sm bg-transparent border border-gray-700 rounded-2xl shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition transform duration-300 mt-5"
         >
@@ -237,89 +211,184 @@
     <section class="section-default">
       <p class="text-pudar text-center">Projects</p>
       <p class="text-white text-xl text-center">Project that I made</p>
-      <div class="flex flex-col gap-7">
-        <div class="project-item">
+      <div class="flex flex-col gap-6">
+        <!-- Project 1 -->
+        <div class="project-item mt-5">
           <div
-            class="bg-[#111] rounded-2xl p-5 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20"
+            class="project-card rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 transition-all duration-300"
           >
             <div class="w-full md:w-1/3">
-              <img
-                src="/img/images.jpeg"
-                alt="Project Image"
-                class="rounded-xl shadow-lg w-full object-cover"
-              />
+              <div
+                class="aspect-video bg-gradient-to-br from-green-500 to-blue-500 rounded-xl shadow-lg flex items-center justify-center"
+              >
+                <span class="text-white text-lg font-semibold">DaurUang</span>
+              </div>
             </div>
 
             <div class="flex-1 text-center md:text-left">
-              <h3 class="text-xl md:text-2xl font-semibold text-white">
-                <span class="text-green-500">Daur</span>Uang Mobile Apps
+              <h3 class="text-xl md:text-2xl font-semibold text-white mb-2">
+                <span class="text-green-400">Daur</span>Uang Mobile Apps
               </h3>
-              <p class="text-gray-400 mt-2">
-                A mobile app project to manage recycling and sustainability.
+              <p class="text-gray-400">
+                A mobile app project to manage recycling and sustainability with
+                rewards system.
               </p>
             </div>
 
-            <div>
+            <div class="flex items-center gap-3">
               <button
-                onclick="toggleDetail(this)"
-                class="inline-block px-5 py-2 bg-blue-500 text-white font-medium rounded-md hover:bg-blue-600 transition"
+                onclick="toggleAccordion(this)"
+                class="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                View Details
+                <span class="accordion-text">View Details</span>
+                <svg
+                  class="chevron w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
               </button>
             </div>
           </div>
-          <div
-            class="detail-content max-h-0 overflow-hidden transition-all duration-500 bg-[#1a1a1a] rounded-b-2xl p-5"
-          >
-            <p class="text-gray-300">
-              📱 Detail project 1: Built with Flutter + Firebase, includes
-              eco-tracking & reward system.
-            </p>
+
+          <div class="detail-content detail-bg rounded-b-2xl px-6 closed">
+            <div class="py-6 border-t border-gray-700">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4
+                    class="text-green-400 font-semibold mb-3 flex items-center gap-2"
+                  >
+                    📱 Technical Details
+                  </h4>
+                  <ul class="text-gray-300 space-y-2">
+                    <li>
+                      • Built with
+                      <span class="text-blue-400">Flutter</span> framework
+                    </li>
+                    <li>
+                      • Backend powered by
+                      <span class="text-orange-400">Firebase</span>
+                    </li>
+                    <li>• Real-time data synchronization</li>
+                    <li>• Cross-platform compatibility</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4
+                    class="text-green-400 font-semibold mb-3 flex items-center gap-2"
+                  >
+                    🌱 Features
+                  </h4>
+                  <ul class="text-gray-300 space-y-2">
+                    <li>• Eco-tracking system</li>
+                    <li>• Reward & point mechanism</li>
+                    <li>• Waste management tools</li>
+                    <li>• Community leaderboards</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="project-item">
+
+        <!-- Project 2 -->
+        <div class="project-item mt-5">
           <div
-            class="bg-[#111] rounded-2xl p-5 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20"
+            class="project-card rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 transition-all duration-300"
           >
             <div class="w-full md:w-1/3">
-              <img
-                src="/img/images.jpeg"
-                alt="Project Image"
-                class="rounded-xl shadow-lg w-full object-cover"
-              />
+              <div
+                class="aspect-video bg-gradient-to-br from-green-500 to-blue-500 rounded-xl shadow-lg flex items-center justify-center"
+              >
+                <span class="text-white text-lg font-semibold">DaurUang</span>
+              </div>
             </div>
 
             <div class="flex-1 text-center md:text-left">
-              <h3 class="text-xl md:text-2xl font-semibold text-white">
-                <span class="text-green-500">Eco</span>Track Web Dashboard
+              <h3 class="text-xl md:text-2xl font-semibold text-white mb-2">
+                <span class="text-green-400">Daur</span>Uang Mobile Apps
               </h3>
-              <p class="text-gray-400 mt-2">
-                A dashboard to visualize recycling data in real-time.
+              <p class="text-gray-400">
+                A mobile app project to manage recycling and sustainability with
+                rewards system.
               </p>
             </div>
 
-            <div>
+            <div class="flex items-center gap-3">
               <button
-                onclick="toggleDetail(this)"
-                class="inline-block px-5 py-2 bg-blue-500 text-white font-medium rounded-md hover:bg-blue-600 transition"
+                onclick="toggleAccordion(this)"
+                class="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                View Details
+                <span class="accordion-text">View Details</span>
+                <svg
+                  class="chevron w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
               </button>
             </div>
           </div>
-          <div
-            class="detail-content max-h-0 overflow-hidden transition-all duration-500 bg-[#1a1a1a] rounded-b-2xl p-5"
-          >
-            <p class="text-gray-300">
-              🌍 Detail project 2: Built with Next.js + Tailwind, shows live
-              recycling stats.
-            </p>
+
+          <div class="detail-content detail-bg rounded-b-2xl px-6 closed">
+            <div class="py-6 border-t border-gray-700">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4
+                    class="text-green-400 font-semibold mb-3 flex items-center gap-2"
+                  >
+                    📱 Technical Details
+                  </h4>
+                  <ul class="text-gray-300 space-y-2">
+                    <li>
+                      • Built with
+                      <span class="text-blue-400">Flutter</span> framework
+                    </li>
+                    <li>
+                      • Backend powered by
+                      <span class="text-orange-400">Firebase</span>
+                    </li>
+                    <li>• Real-time data synchronization</li>
+                    <li>• Cross-platform compatibility</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4
+                    class="text-green-400 font-semibold mb-3 flex items-center gap-2"
+                  >
+                    🌱 Features
+                  </h4>
+                  <ul class="text-gray-300 space-y-2">
+                    <li>• Eco-tracking system</li>
+                    <li>• Reward & point mechanism</li>
+                    <li>• Waste management tools</li>
+                    <li>• Community leaderboards</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- Project 3 - Bonus -->
       </div>
     </section>
+
     <!-- Tools and Skills -->
-    <section class="section-default py-16 px-4 bg-black">
+    <section class="section-default px-4 bg-black">
       <header class="text-center mb-12">
         <p class="text-white text-3xl md:text-4xl font-semibold">
           Tools and Skills
@@ -389,11 +458,15 @@
         </div>
       </div>
     </section>
+
+    <!-- organization -->
     <section class="section-default">
       <p class="text-pudar text-center">Organization</p>
       <p class="text-white text-xl text-center mb-10">
         Organization & Committee Experience
       </p>
+
+      <!-- Carousel container -->
       <div
         class="carousel-container relative w-full max-w-6xl mx-auto bg-gray-800 rounded-3xl shadow-2xl overflow-hidden"
       >
@@ -409,10 +482,10 @@
             <!-- Gambar -->
             <div class="w-full md:w-1/3 flex justify-center">
               <img
-                id="autoSlideImg"
-                src="./img/gdgoc.JPG"
+              id="slide1Img"
+                src="./img/gdgoc/core_team.png"
                 alt="GDGoC UNHAS"
-                class="rounded-xl shadow-lg w-full h-auto object-cover transition-opacity duration-700 opacity-100"
+                class="rounded-xl shadow-lg w-full h-auto object-cover transition-opacity duration-700 ease-in-out"
               />
             </div>
 
@@ -422,7 +495,7 @@
                 class="flex flex-col md:flex-row md:items-center md:justify-between mb-3"
               >
                 <h3 class="text-xl md:text-2xl font-bold text-sky-500">
-                  GDGoC Universitas Hasanuddin
+                  GDGoC UNHAS
                 </h3>
                 <span class="text-gray-400 text-sm"
                   >November 2024 – July 2025</span
@@ -430,10 +503,11 @@
               </div>
               <p class="text-gray-300 leading-relaxed mb-3">
                 Google Developer Groups on Campus – Hasanuddin University is a
-                community directly supported by Google, covering learning tracks
-                such as Front-end, Back-end, Mobile Development, Data Science,
-                and IoT. The community has also organized various events to
-                support students in growing their tech skills.
+                student-led community officially supported by Google. It offers
+                learning tracks in Front-end, Back-end, Mobile Development, Data
+                Science, and IoT. The community also organizes events,
+                workshops, and collaborations that help students sharpen their
+                skills and engage with the tech industry.
               </p>
               <p class="text-gray-400">Public Relation</p>
               <p class="text-gray-400">Makassar, Indonesia</p>
@@ -447,10 +521,11 @@
             <!-- Gambar -->
             <div class="w-full md:w-1/3 flex justify-center">
               <img
-                id="autoSlideImg"
-                src="./img/DSC00974.JPG"
-                alt="GDGoC UNHAS"
-                class="rounded-xl shadow-lg w-full h-auto object-cover transition-opacity duration-700 opacity-100"
+                id="slide2Img"
+                src="./img/recursion/fullpanit.png"
+                alt="Recursion 1.0"
+                class="rounded-xl shadow-lg w-full h-auto object-cover transition-opacity duration-700 ease-in-out"
+                
               />
             </div>
 
@@ -465,10 +540,13 @@
                 <span class="text-gray-400 text-sm">Dec 2024 – April 2025</span>
               </div>
               <p class="text-gray-300 leading-relaxed mb-3">
-                A community annual competition organized by Informatics Students
-                of Hasanuddin University, featuring four categories: UI/UX
-                Design, ICT Business Plan, Capture The Flag (CTF), and
-                Competitive Programming (CP).
+                Red Campus Futurist Informatics Competition is an annual event
+                organized by Informatics students of Hasanuddin University. The
+                competition consists of four major categories: UI/UX Design, ICT
+                Business Plan, Capture The Flag (CTF), and Competitive
+                Programming (CP). Each track is carefully designed to foster
+                creativity, improve problem-solving abilities, and promote
+                teamwork among participants.
               </p>
               <p class="text-gray-400">UI/UX Competition Committee</p>
               <p class="text-gray-400">Makassar, Indonesia</p>
@@ -476,27 +554,29 @@
           </div>
         </div>
 
-        <!-- Tombol -->
+        <!-- Tombol navigasi -->
         <button
           id="prevBtn"
-          class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full p-2 bg-biru shadow-lg hover:from-sky-600 hover:to-sky-500 hover:scale-110 transition-all duration-300 ease-in-out"
+          class="absolute top-1/2 -translate-y-1/2 left-4 bg-black/50 text-white p-3 rounded-full hover:bg-black/70"
         >
-          <img src="./img/svg/left_arrow.svg" alt="Previous" class="w-6 h-6" />
+          &#10094;
         </button>
-
         <button
           id="nextBtn"
-          class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center p-2 bg-biru text-white text-2xl font-bold rounded-full shadow-lg border border-gray-600 hover:scale-110 hover:from-sky-600 hover:to-sky-500 transition duration-300 ease-in-out"
+          class="absolute top-1/2 -translate-y-1/2 right-4 bg-black/50 text-white p-3 rounded-full hover:bg-black/70"
         >
-          <img src="./img/svg/right_arrow.svg" alt="" />
+          &#10095;
         </button>
+      </div>
 
-        <!-- Indikator -->
-        <div
-          class="carousel-indicators absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3"
-        ></div>
+      <!-- Indikator di luar container -->
+      <div class="carousel-indicators flex justify-center mt-4 gap-3">
+        <!-- <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+        <span class="w-3 h-3 rounded-full bg-gray-700"></span> -->
       </div>
     </section>
+
+    <!--  -->
 
     <section class="section-default">
       <div
@@ -507,7 +587,9 @@
           <h2 class="text-white text-3xl md:text-4xl font-bold mb-2">
             Have any project in mind?
           </h2>
-          <p class="text-gray-400">I'm available for freelancing</p>
+          <p class="text-gray-400">
+            I'm available for internship/freelancing/project
+          </p>
         </div>
 
         <!-- Tombol -->
@@ -520,7 +602,7 @@
           <button
             class="bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-600 transition w-full md:w-auto"
           >
-            Email Me
+            <a href="mailto:agugo2019@gmail.com">Kirim Email</a>
           </button>
         </div>
       </div>
@@ -530,5 +612,6 @@
     <script src="./js/hamburger_menu.js"></script>
     <script src="./js/carrousel.js"></script>
     <script src="./js/image.js"></script>
+    <script src="./js/accordion.js"></script>
   </body>
 </html>
