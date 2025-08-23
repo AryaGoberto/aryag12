@@ -8,52 +8,14 @@
   --color-pudar: #999999; /* hijau */
   --color-gelap: #0b1924;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /*  */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css");
 
-.detail-content {
-  transition:
-    max-height 0.5s ease-in-out,
-    padding 0.5s ease-in-out,
-    opacity 0.3s ease-in-out;
-}
 
-.detail-content.closed {
-  max-height: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  opacity: 0;
-}
-
-.detail-content.open {
-  max-height: 200px;
-  opacity: 1;
-}
-
-.chevron {
-  transition: transform 0.3s ease-in-out;
-}
-
-.chevron.rotate {
-  transform: rotate(180deg);
-}
-
-.project-card {
-  background: linear-gradient(145deg, #1a1a1a, #111111);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.project-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-
-.detail-bg {
-  background: linear-gradient(145deg, #222222, #1a1a1a);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-/*  */
 
 /* Animasi hamburger jadi X */
 .open span:nth-child(1) {
